@@ -1,0 +1,59 @@
+{
+	"root": true,
+	"env": {
+		"node": true,
+		"commonjs": true,
+		"es6": true,
+		"jquery": false,
+		"jest": true,
+		"jasmine": true
+	},
+	"extends": "eslint:recommended",
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly",
+		"projectDir": "readonly",
+		"config": "readonly",
+		"appDir": "readonly",
+		"Controllers": "readonly",
+		"Listeners": "readonly",
+		"Services": "readonly",
+		"Policies": "readonly",
+		"Models": "readonly",
+		"db": "readonly",
+		"log": "readonly",
+		"ObjectID": "readonly",
+		"EscapeString": "readonly",
+		"moment": "readonly",
+		"fsasy": "readonly",
+		"QueueClass": "readonly",
+		"Microservices": "readonly"
+	},
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"sourceType": "module"
+	},
+	"parser": "babel-eslint",
+	"rules": {
+		"quotes": ["error", "double", "avoid-escape"],
+		"semi": [1, "never"],
+		"spaced-comment": "error",
+		"indent": [
+			"error",
+			"tab",
+			{
+				"SwitchCase": 1
+			}
+		],
+		"no-console": ["off"],
+		"no-unused-vars": ["warn"],
+		"no-mixed-spaces-and-tabs": ["error"],
+		"require-atomic-updates": "off",
+		"no-undef": "warn",
+		"no-extra-boolean-cast": "off",
+		"no-prototype-builtins": "off",
+		"no-async-promise-executor": "off",
+		"no-inner-declarations": "off",
+		"no-useless-escape": "warn"
+	}
+}
